@@ -127,3 +127,9 @@ STRIPE_API_KEY_EUR = os.environ.get('STRIPE_API_KEY_EUR')
 STRIPE_API_KEY_USD = os.environ.get('STRIPE_API_KEY_USD')
 
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://test-strip-api.onrender.com",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
