@@ -45,7 +45,7 @@
             </tbody>
         </table>
         <p>
-            <strong>Итого:</strong> {{ order.total_amount }} {{ order.order_items.first.item.currency|upper }}
+            <strong>Итого:</strong> {{ order.total_amount|floatformat:2 }} {{ order.order_items.first.item.currency|upper }}
         </p>
         <div class="my-3">
             {% if order.discount %}
